@@ -1,0 +1,52 @@
+{
+    "auto_install": [
+        {
+            "image": "/Windows/windows_10_pro_20h2_pcn",
+            "template": "/unattend/autounattend-pcn-2020.xml"
+        },
+		{
+            "image": "/Windows/windows_10_home_20h2_pcn.iso",
+            "template": "/unattend/autounattend-pcn-2020.xml"
+        }
+    ],
+    "menu_alias": [
+        {
+            "image": "/Windows/windows_10_pro_20h2_pcn",
+            "alias": "Windows 10 Pro 20H2 PCN"
+        },
+        {
+            "image": "/Windows/windows_10_home_20h2_pcn.iso",
+            "alias": "Windows 10 Home 20H2 PCN"
+        }
+    ],
+    "theme": {
+        "file": "/ventoy/theme/pcn/theme.txt",
+        "gfxmode": "1920x1080",
+        "display_mode": "GUI",
+        "ventoy_left": "5%",
+        "ventoy_top": "95%",
+        "ventoy_color": "#ff0000"
+    },
+    "menu_class": [
+        {
+            "key": "win",
+            "class": "windows"
+        },
+        {
+            "key": "PE",
+            "class": "windows"
+        },
+        {
+            "key": "ubuntu",
+            "class": "ubuntu"
+        },
+        {
+            "dir": "/Windows",
+            "class": "windows"
+        },
+        {
+            "dir": "/WinPE",
+            "class": "windows"
+        }
+    ]
+}
